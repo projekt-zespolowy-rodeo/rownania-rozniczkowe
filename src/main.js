@@ -78,7 +78,8 @@ const heunsMethod = (n,a,b)=>{
     h = countH(a,b,n);
     list_of_x =[];
     list_of_x.push(a);
-    // console.log("x"+0+" = "+list_of_x[0]);
+    solution.appendChild(document.createTextNode("x"+0+" = "+list_of_x[0]));
+    solution.appendChild(document.createElement('br'));
     for(var i=1;i<=n;i++){
         list_of_x.push(list_of_x[i-1]+h);
         solution.appendChild(document.createTextNode("x"+i+" = "+list_of_x[i]));
