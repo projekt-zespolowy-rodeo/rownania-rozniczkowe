@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Metody numeryczne dla zagadnień różniczkowych</title>
 </head>
 <body>
-
-
-
-    <script src="src/main.js"></script>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-text text-white mx-auto h2">
+            Metody numeryczne dla zagadnień różniczkowych
+        </span>
+    </nav>
+    
+    <div class="card mt-5  w-50 mx-auto">
+        <div class="card-header h4">
+            <div>Zagadnienie różniczkowe: y′(x) =f(x, y(x)), y(1) = 6, gdzie f(x, y(x)) = 2(y−2x−1) + 2</div>
+            <br>
+            <div class="inline-block">
+              <form class="form-inline">
+                  
+                <div class="form-group">
+                  <label for="n">Liczba n­>=1, określająca podział odcinka [a, b]</label>
+                  <input type="text" id="n" class="form-control mx-sm-3">
+                </div>
+                <div class="form-group">
+                    <label for="b">Liczba b, informująca o końcu odcinka [a, b]</label>
+                    <input type="text" id="b" class="form-control mx-sm-3">
+                </div>
+                
+                <a id="solve" class="btn btn-dark">Rozwiąż</a>
+              </form>              
+            </div>
+          </div>
+          <div class="card-body">
+              <div id="solution"></div>
+          </div>
+         
+      
+      </div>
+      <script src="src/main.js"></script>
 </body>
 </html>
